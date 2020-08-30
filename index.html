@@ -1,0 +1,78 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<title>Recipe Rescue</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.typekit.net/alp8mur.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- nav bar -->
+
+<div id="navBar" class="navvy">
+<a href="index.html"><img alt="recipe rescue logo and link to homepage" id="rrLogo" class="navlogo" src="images/rrLogo-new.svg"> </a>
+</div><!-- this the header navbar-->
+
+<!-- tabs -->
+<div id="tab-container">
+	<button class="tab tab-1">LOOKING FOR A RECIPE?</button><button class="tab tab-2">R + R Recipes</button><button class="tab tab-3">GROCERY LIST</button>
+</div>
+
+<!-- tab 1 content -->
+<div class="tab-content active-tab">
+	<div class="search-bar-container">
+		<input type="text" id="searchIngredients" placeholder="SEARCH BY INGREDIENTS">
+		<input type="text" id="searchFood" placeholder="SEARCH BY FOOD">
+		<button id="submit">Search</button>
+	</div>
+	<div class="results-container">
+		<div id="results"></div>
+	</div>
+</div>
+
+<!-- tab 2 content -->
+<div class="tab-content">
+	<div class="rr-recipes-container">
+		<div id="rrIndex">
+			<!--<div id="rrRecipeSnapshot" class="desktopRRView tabletView phoneView">
+			</div>--><!--end of rrRecipeSnapshot-->
+		</div><!--end of rrIndex-->
+			
+			<div id="rrRecipeBox">
+				<div id="back-button"><img src="images/xCloseNoShadow.svg" alt="close recipe slider button" class="closeSlider"></div>
+				<div id="rrFullRecipe">
+			
+				<div id="goLeft">
+					<img alt="arrow left" src="images/goLeft.svg">
+				</div><!--end of left arrow-->
+			
+				<div id="goRight">
+					<img alt="arrow right" src="images/goRight.svg">
+				</div><!--end of right arrow-->
+			
+				</div><!--end of rrFullRecipe-->
+			</div><!--end of rrRecipeBox-->
+	</div>
+</div>
+
+<!-- tab 3 content -->
+<div class="tab-content">
+	<div class="grocery-list-background">
+		<button id="exportPDF">Export/Print Shopping List</button>
+		<div id="groceryListContainer"></div>
+	</div>
+</div>
+
+<!-- footer -->
+<div id="footerR">
+This application was created for educational purposes only.<br>
+2020
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- JQuery -->
+<script type="text/javascript" src="config.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
+

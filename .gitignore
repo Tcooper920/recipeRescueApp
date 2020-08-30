@@ -1,0 +1,5 @@
+# ignore config with API key
+config.js
+
+# ignore mac generated file
+.DS_Store
